@@ -28,7 +28,7 @@ $(document).ready(function(){
     ];
     for(v of $new_arrivals){
         $("#new_arrivals .cont").append(`
-        <div class="box" style="background-image:url(../img/products/${v[0]})">
+        <div class="box" style="background-image:url(img/products/${v[0]})">
             <div class="dark">
                 <h4>${v[1]}</h4>
                 <p>${v[2]}</p>
@@ -48,7 +48,7 @@ $(document).ready(function(){
     for(v of $match){
         $(".match .cont").append(`
         <div class="box">
-            <div class="imgPart" style="background-image:url(../img/${v[0]})"></div>
+            <div class="imgPart" style="background-image:url(img/${v[0]})"></div>
 
             <div class="txtPart">
                 <h4>${v[1]}</h4>
@@ -71,7 +71,7 @@ $(document).ready(function(){
     for(v of $new_year){
         $(".new_year .cont").append(`
         <div class="box">
-            <div class="imgPart" style="background-image:url(../img/${v[0]})"></div>
+            <div class="imgPart" style="background-image:url(img/${v[0]})"></div>
 
             <div class="txtPart">
                 <h4>${v[1]}</h4>
