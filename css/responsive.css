@@ -1,0 +1,83 @@
+/********** 반응형 **********/
+
+@media (max-width:1599px){
+    /*footer*/
+    footer .dark .fotMenu{width: 100%;}
+    footer .dark .fotMenu .fotLogo{position: static; margin-bottom: 40px;}
+
+    footer .dark .fotPuma{display: none;}    
+}
+
+
+@media (max-width:1218px){
+    /*new_arrivals*/
+    #new_arrivals .wrap{width: 100%; padding: 0 10px;} 
+    #new_arrivals .wrap .cont .box{width: calc(100% / 3 - 20px);}
+    #new_arrivals .wrap .cont .box:nth-child(1){display: none;}
+    #new_arrivals .wrap .cont .box:last-child{display: none;}
+
+    /*#run*/
+    #run{width: 100%;}
+
+    /*#same_box*/
+    #same_box{padding: 100px 10px 80px 10px;}
+    #same_box .wrap .cont .box .imgPart{height: calc((100vw - 80px) / 3);}
+}
+
+
+@media (max-width:1170px){
+    /*main*/
+    main{height: 600px;}
+}
+
+
+@media (max-width:991px){
+    /*header*/
+    header{padding: 0 20px;}
+
+    header .menu{position: absolute; top:60px; left:0; width: 100%; background-color: #333; text-align: center; max-height: 0; overflow-y: hidden; transition:  max-height 0.5s;}
+    header .menu.active{max-height: 400px;}
+    header .menu ul{flex-direction: column;}
+    header .menu ul li{margin: 0;}
+    header .menu ul li a{line-height: 40px;}
+    header .menu ul li a:after{background-color: transparent;}
+
+    header .mypage ul li:nth-child(4){display: block;}
+}
+
+
+@media (max-width:840px){
+    /*main*/
+    main{height: 350px;}
+}
+
+
+@media (max-width:767px){
+    /*new_arrivals*/
+    #new_arrivals .wrap .cont .box{width: calc(50% - 20px);}
+
+    /*#same_box*/
+    #same_box{padding: 100px 20px 80px 20px;}
+    #same_box .wrap .cont{flex-wrap: wrap; justify-content: space-between;}
+    #same_box .wrap .cont .box{width: calc(50% - 10px); padding-bottom: 40px;}
+    #same_box .wrap .cont .box .imgPart{margin-bottom: 20px;}
+    #same_box .wrap .cont .box .imgPart{height: calc((100vw - 120px) / 2);}
+
+    /*run*/
+    #run{flex-direction: column;}
+    #run div{width: 100%;}
+    
+    /*footer*/
+    footer .dark .fotMenu .top{flex-direction: column;}    
+    footer .dark .fotMenu .top .category{width: 100%;}
+}
+
+
+@media (max-width:567px){
+    /*new_arrivals*/
+    #new_arrivals .wrap .cont .box{width: 100%;}
+
+    /*#same_box*/
+    #same_box .wrap .cont .box{width: 100%;}
+    #same_box .wrap .cont .box .imgPart{height: calc((100vw - 120px) / 1);}
+}
